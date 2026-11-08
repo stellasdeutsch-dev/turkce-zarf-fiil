@@ -811,6 +811,23 @@ h3{font-size:clamp(34px,5vw,50px)}
 .vc.on{background:var(--blue);transform:translateY(-5px)}
 .vc.on b,.vc.on small{color:#fff}
 @media (max-width:639px){.mg-glue button{font-size:20px}.mg-glue{gap:4px}}
+
+.vtabs{justify-content:center;margin-top:18px}
+.vp{margin-top:16px;background:#fff;border-radius:14px;box-shadow:var(--sh);overflow:hidden}
+.vp-top{display:flex;gap:6px;padding:10px 14px;background:var(--mist)}
+.vp-top i{width:10px;height:10px;border-radius:50%;background:#C9D6E4}
+.vp video{display:block;width:100%;aspect-ratio:960/456;background:var(--mist)}
+#vCap{margin-top:12px}
+.rvs{display:grid;gap:14px;margin-top:28px;align-items:start}
+.rc{margin:0;background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:18px;transition:transform .25s}
+.rc:hover{transform:translateY(-4px)}
+.rc.s{background:var(--sand)}
+.rc blockquote{margin:0 0 14px;font:700 clamp(26px,3.4vw,32px)/1.08 'Sofia Sans Extra Condensed',Impact,sans-serif;color:var(--slate);text-wrap:balance;hyphens:manual}
+.rc.s blockquote{color:#5a4412}
+.rc img{width:100%;height:auto;border-radius:10px}
+.pull{margin:80px auto 0;max-width:820px;text-align:center;font:700 clamp(38px,6vw,64px)/1.02 'Sofia Sans Extra Condensed',Impact,sans-serif;color:var(--slate);text-wrap:balance;hyphens:manual}
+.pull span{color:var(--blue)}
+@media (min-width:640px){.rvs{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body class="has-ad">
@@ -1085,6 +1102,13 @@ h3{font-size:clamp(34px,5vw,50px)}
     <div class="chips2"><span>фильмы</span><span>книги</span><span>мультфильмы</span><span>подкасты</span><span>приложения</span><span>YouTube</span></div>
   </div>
 
+  <div class="rv" style="margin-top:44px">
+    <h3 style="text-align:center">Как это выглядит внутри</h3>
+    <div class="seg vtabs" id="vTabs"><button class="on" type="button" data-src="media/v-unsuz.mp4" data-p="media/v-unsuz.webp" data-c="Гайд как этот. Деталь за деталью.">Гайды</button><button type="button" data-src="media/v-cizgi.mp4" data-p="media/v-cizgi.webp" data-c="Мультфильмы по уровням. Открываешь свой и смотришь.">Мультфильмы</button><button type="button" data-src="media/v-podcasts.mp4" data-p="media/v-podcasts.webp" data-c="Подкасты по уровням. От A1 до C1.">Подкасты</button></div>
+    <div class="vp"><div class="vp-top" aria-hidden="true"><i></i><i></i><i></i></div><video id="vid" muted loop playsinline preload="none" poster="media/v-unsuz.webp" src="media/v-unsuz.mp4" aria-label="Запись экрана платформы"></video></div>
+    <p class="txt" id="vCap" style="text-align:center;margin-inline:auto">Гайд как этот. Деталь за деталью.</p>
+  </div>
+
   <div class="collage rv"><div class="cg-in">
     <div class="ph"><img src="media/ph-route-levels.webp" alt="Маршрут по уровням на платформе" loading="lazy"></div>
     <div class="ph"><img src="media/ph-kitap.webp" alt="Книги на платформе" loading="lazy"></div>
@@ -1093,6 +1117,10 @@ h3{font-size:clamp(34px,5vw,50px)}
     <div class="ph"><img src="media/ph-yt-charts.webp" alt="Каталог YouTube на платформе" loading="lazy"></div>
     <div class="ph"><img src="media/ph-apps.webp" alt="Приложения на платформе" loading="lazy"></div>
   </div></div>
+
+  <h2 class="rv" style="margin-top:80px;text-align:center">Что пишут те, кто уже внутри</h2>
+  <p class="lead rv" style="text-align:center;margin-inline:auto">Настоящие сообщения в Telegram. Имена и фото убрал, чтобы не показывать людей без спроса.</p>
+  <div class="rvs"><figure class="rc rv"><blockquote>"Сразу появилась уверенность и вести диалоги стало легче."</blockquote><img src="media/rv-1.webp" alt="Скриншот отзыва в Telegram" loading="lazy"></figure><figure class="rc rv s"><blockquote>"Очень нравится подача через личные истории, это смешно и помогает легче запомнить информацию."</blockquote><img src="media/rv-2.webp" alt="Скриншот отзыва в Telegram" loading="lazy"></figure><figure class="rc rv s"><blockquote>"Создать площадку с уровня А0 до уровня С1 с такой огромнейшей базой для облегчения процесса изучения турецкого языка- это что-то!!!"</blockquote><img src="media/rv-3.webp" alt="Скриншот отзыва в Telegram" loading="lazy"></figure><figure class="rc rv"><blockquote>"Все проходит весело, непринуждённо, с огромным удовольствием!"</blockquote><img src="media/rv-4.webp" alt="Скриншот отзыва в Telegram" loading="lazy"></figure></div>
 
   <div class="two-col" style="margin-top:80px">
     <div>
@@ -1134,6 +1162,8 @@ h3{font-size:clamp(34px,5vw,50px)}
     <div class="ai rv"><button class="ai-h" type="button"><span>Это подписка?</span><i class="pm"></i></button><div class="ai-b"><div class="ai-c"><div class="ai-p"><p class="txt">Нет. $30. Один раз. Доступ навсегда.</p></div></div></div></div>
     <div class="ai rv"><button class="ai-h" type="button"><span>Что делать, если остался вопрос?</span><i class="pm"></i></button><div class="ai-b"><div class="ai-c"><div class="ai-p"><p class="txt">Напиши мне в WhatsApp. Кнопка чуть ниже.</p></div></div></div></div>
   </div>
+
+  <p class="pull rv">"Понимать понимала, но говорить не говорила... <span>Сразу барьер прошел."</span></p>
 
   <div class="hour" id="buy">
     <svg class="glass" viewBox="0 0 200 300" aria-hidden="true"><path fill="#fff" stroke="#A9D3EE" stroke-width="5" d="M40 16h120v40c0 40-44 62-44 94s44 54 44 94v40H40v-40c0-40 44-62 44-94S40 96 40 56z"/><path fill="#67B2E3" d="M58 76h84c-8 28-42 46-42 66 0-20-34-38-42-66z"/><path fill="#4C9BD1" d="M56 284c0-38 22-58 44-58s44 20 44 58z"/><g class="beads" fill="#2C78AE"><circle cx="100" cy="158" r="5"/><circle cx="100" cy="180" r="4"/><circle cx="100" cy="202" r="5"/></g><path fill="#F6D79B" d="M30 4h140v18H30zM30 278h140v18H30z"/></svg>
@@ -1337,6 +1367,14 @@ if(G&&ST&&!RM){
  G.to('.g1',{y:-14,rotate:10,duration:3.4,yoyo:true,repeat:-1,ease:'sine.inOut'});G.to('.g2',{y:12,rotate:-14,duration:2.9,yoyo:true,repeat:-1,ease:'sine.inOut'});
  var hm=$$('#heroChat .m');G.set(hm,{opacity:0,y:12});G.timeline({repeat:-1,repeatDelay:2.4}).to(hm,{opacity:1,y:0,duration:.4,stagger:1.1}).to(hm,{opacity:0,duration:.3},'+=2');
 }else{$$('.rv').forEach(function(e){e.style.opacity=1;e.style.transform='none'})}
+
+
+/* видео */
+var vid=$('#vid');window.__vidSeen=false;
+if(vid){var vVis=false;function vPlay(){if(RM)return;if(vVis){var p=vid.play();if(p&&p.catch)p.catch(function(){})}else vid.pause()}
+ if(RM)vid.controls=true;
+ new IntersectionObserver(function(e){vVis=e[0].isIntersecting;window.__vidSeen=window.__vidSeen||vVis;vPlay()},{threshold:.35}).observe(vid);
+ $$('#vTabs button').forEach(function(b){b.addEventListener('click',function(){$$('#vTabs button').forEach(function(x){x.classList.toggle('on',x===b)});vid.poster=b.dataset.p;vid.src=b.dataset.src;$('#vCap').textContent=b.dataset.c;vPlay()})})}
 
 /* реклама */
 function fmt(n){return String(n)}
