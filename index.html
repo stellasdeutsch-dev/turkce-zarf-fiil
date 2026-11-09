@@ -854,6 +854,23 @@ h3{font-size:clamp(34px,5vw,50px)}
 @media (min-width:1000px){
   .vis-g.c3{grid-template-columns:repeat(3,1fr);max-width:none}
 }
+/* retention: checkpoints and bridge */
+.hk{hyphens:manual;-webkit-hyphens:manual}
+.cp{margin:64px 0 40px;display:grid;gap:14px}
+.cp-bar{height:8px;background:var(--mist2);border-radius:99px;overflow:hidden}
+.cp-bar i{display:block;height:100%;background:var(--blue);border-radius:99px}
+.cp p{font-size:clamp(17px,1.9vw,20px);line-height:1.5;max-width:46em;color:var(--grey);hyphens:manual;-webkit-hyphens:manual}
+.cp b{color:var(--ink);font-weight:800}
+.brg-s{padding-bottom:0}
+.brg{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:clamp(32px,6vw,84px);align-items:center;border-bottom:1px solid var(--line)}
+.brg-ph{width:100%;height:auto;align-self:end;margin:0}
+.brg-t{padding:clamp(16px,3vw,40px) 0}
+.brg-l{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px;font-size:17px;line-height:1.45;hyphens:manual;-webkit-hyphens:manual}
+.brg .lead{hyphens:manual;-webkit-hyphens:manual}
+.brg-l li{display:flex;gap:10px;align-items:flex-start}
+.brg-l .ic{color:var(--blue);margin-top:2px;width:22px;height:22px}
+.brg-t .btn{margin-top:24px}
+@media (max-width:767px){.brg{grid-template-columns:minmax(0,1fr)}.brg-ph{max-width:320px;margin:0 auto;align-self:auto}}
 </style>
 </head>
 <body class="has-ad">
@@ -917,6 +934,7 @@ h3{font-size:clamp(34px,5vw,50px)}
 
 <section class="sec" id="story"><div class="wrap">
   <h2 class="rv">Как я три месяца допрашивал соседку</h2>
+  <p class="lead hk">Есть слово <span class="w" lang="tr">giderek</span>. На вид обычная склейка на <span class="w" lang="tr">-⁠erek</span>. Только часто никто никуда не идет. Что оно значит, скажу ближе к концу.</p>
   <div class="thread two">
     <div class="post rv"><p>Я снимал квартиру в Стамбуле. Хозяйка жила этажом ниже. Хозяйку звали Фатма-тейзе. Фатма-тейзе каждый вечер спрашивала, как прошел день.</p></div>
     <div class="post rv"><p>Я хотел сказать: когда пришел домой, поел. Говорю, <span class="w" lang="tr">ne zaman eve geldim, yemek yedim</span>.</p><p>Фатма-тейзе напряглась.</p></div>
@@ -998,6 +1016,7 @@ h3{font-size:clamp(34px,5vw,50px)}
     <div class="pzrow gap" id="bldRow"></div>
     <div class="ex" style="box-shadow:none"><button class="say" type="button" id="bldSay" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" id="bldW" lang="tr"></p><p class="ru" id="bldR"></p></div></div>
   </div>
+  <div class="cp"><div class="cp-bar" aria-hidden="true"><i style="width:34%"></i></div><p><b>Треть гайда позади.</b> Дальше гласная выбирает клей. У одних склеек четыре варианта, у других два. Одной все равно.</p></div>
   <h3 class="rv" style="margin-top:70px">Гласная выбирает, какой клей взять</h3>
   <p class="txt rv">Смотри на последнюю гласную глагола. У одних склеек четыре варианта, у других два. А одной все равно.</p>
   <figure class="vis"><div class="vis-g c3"><svg viewBox="0 0 300 130" role="img" aria-label="Банка: четыре варианта"><g data-in="u" ><rect x="18" y="34.0" width="64" height="16.5" rx="2" fill="#2C78AE" /><rect x="18" y="52.5" width="64" height="16.5" rx="2" fill="#67B2E3" /><rect x="18" y="71.0" width="64" height="16.5" rx="2" fill="#EEC170" /><rect x="18" y="89.5" width="64" height="16.5" rx="2" fill="#C96A6A" /></g><rect x="14" y="26" width="72" height="90" rx="12" fill="none" stroke="#566A8B" stroke-width="3"/><rect x="22" y="14" width="56" height="14" rx="4" fill="#566A8B" /><text x="108" y="56" font-size="19" font-weight="700" text-anchor="start" fill="#2A3444" lang="tr">-⁠ince, -⁠ip</text><text x="108" y="86" font-size="16" font-weight="500" text-anchor="start" fill="#657082">четыре варианта</text></svg><svg viewBox="0 0 300 130" role="img" aria-label="Банка: два варианта"><g data-in="u" ><rect x="18" y="34.0" width="64" height="35.0" rx="2" fill="#67B2E3" /><rect x="18" y="71.0" width="64" height="35.0" rx="2" fill="#C96A6A" /></g><rect x="14" y="26" width="72" height="90" rx="12" fill="none" stroke="#566A8B" stroke-width="3"/><rect x="22" y="14" width="56" height="14" rx="4" fill="#566A8B" /><text x="108" y="56" font-size="19" font-weight="700" text-anchor="start" fill="#2A3444" lang="tr">-⁠erek, -⁠madan</text><text x="108" y="86" font-size="16" font-weight="500" text-anchor="start" fill="#657082">два варианта</text></svg><svg viewBox="0 0 300 130" role="img" aria-label="Банка: одной все равно"><g data-in="u" ><rect x="18" y="34.0" width="64" height="72.0" rx="2" fill="#EEC170" /></g><rect x="14" y="26" width="72" height="90" rx="12" fill="none" stroke="#566A8B" stroke-width="3"/><rect x="22" y="14" width="56" height="14" rx="4" fill="#566A8B" /><text x="108" y="56" font-size="19" font-weight="700" text-anchor="start" fill="#2A3444" lang="tr">-⁠ken</text><text x="108" y="86" font-size="16" font-weight="500" text-anchor="start" fill="#657082">одной все равно</text></svg></div></figure>
@@ -1043,7 +1062,7 @@ h3{font-size:clamp(34px,5vw,50px)}
   <p class="sc-cap" id="sovC"></p>
   <div class="dots"></div>
 </div></div></div></div>
-<div class="wrap"><h3 class="rv" style="margin-top:40px">Клей не знает, какой сегодня день</h3>
+<div class="wrap"><div class="cp"><div class="cp-bar" aria-hidden="true"><i style="width:67%"></i></div><p><b>Две трети позади.</b> Дальше клей, который не знает, какой сегодня день. Потом шесть мест, где ломаются русскоязычные.</p></div><h3 class="rv" style="margin-top:40px">Клей не знает, какой сегодня день</h3>
   <p class="txt rv">Время меняется только у последнего глагола. Склейка стоит как стояла.</p>
 </div>
 <div class="stage" id="stTime" data-n="4"><div class="pin"><div class="wrap"><div class="scene bluey">
@@ -1103,6 +1122,16 @@ h3{font-size:clamp(34px,5vw,50px)}
   <div id="exam"></div>
   <div class="score" id="score"><b id="scoreN"></b><p id="scoreT"></p></div>
   <figure class="vis vis-s"><svg viewBox="0 0 340 250" role="img" aria-label="Фатма-тейзе стоит у двери с тарелкой супа"><g ><rect x="218" y="26" width="104" height="212" rx="4" fill="none" stroke="#566A8B" stroke-width="8"/><rect x="226" y="34" width="88" height="204" rx="0" fill="#F6D79B" /><circle cx="304" cy="138" r="6" fill="#7A5410" /></g><rect x="0" y="238" width="340" height="8" rx="0" fill="#566A8B" /><g data-in="u" ><rect x="138" y="172" width="44" height="66" rx="16" fill="#C96A6A" /><circle cx="160" cy="152" r="26" fill="#EEC170" /><rect x="136" y="160" width="48" height="22" rx="11" fill="#EEC170" /><circle cx="160" cy="154" r="15.5" fill="#F3D9BE" /><circle cx="154" cy="152" r="2.2" fill="#2A3444" /><circle cx="166" cy="152" r="2.2" fill="#2A3444" /></g><g data-in="u" ><rect x="40" y="200" width="112" height="10" rx="5" fill="#566A8B" /><rect x="60" y="176" width="72" height="26" rx="12" fill="#2C78AE" /><ellipse cx="96" cy="176" rx="34" ry="7" fill="#EEC170" /><path d="M150 200l-14 6" stroke="#C96A6A" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" /></g><g class="v-steam"><path d="M82 166c-6-10 6-14 0-24" stroke="#67B2E3" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" /><path d="M108 166c-6-10 6-14 0-24" stroke="#67B2E3" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" /></g><g data-in="p" ><rect x="20" y="58" width="96" height="44" rx="14" fill="#2C78AE" /><path d="M96 100l14 16 6-16Z" fill="#2C78AE" /><text x="68" y="86" font-size="18" font-weight="700" text-anchor="middle" fill="#fff" lang="tr">Aferin!</text></g></svg><div class="vis-cap"><p class="vis-kick">Суп все равно принесут.</p><p class="muted">Даже если склейка вышла с первого раза.</p></div></figure>
+</div></section>
+
+<section class="sec brg-s" aria-labelledby="brgH"><div class="wrap brg">
+  <img class="brg-ph" src="media/ph-bridge.webp" alt="" width="340" height="513" loading="lazy">
+  <div class="brg-t">
+    <h2 id="brgH"><span lang="tr">Giderek</span> часто значит "постепенно"</h2>
+    <ul class="brg-l"><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg><span>Теперь <span class="w" lang="tr">Eve <span class="r">gel</span><span class="a">ince</span> yemek yedim</span> звучит как рассказ, без допроса. Фатма-тейзе спокойна.</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg><span>Пять вопросов вместо учебника теперь при тебе. Какой вопрос, такой клей.</span></li></ul>
+    <p class="lead">Одна тема закрыта. На платформе 128 гайдов, $30 один раз.</p>
+    <a class="btn sand" href="#ad">Посмотреть платформу<svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></a>
+  </div>
 </div></section>
 
 <section class="ad" id="ad"><div class="wrap">
