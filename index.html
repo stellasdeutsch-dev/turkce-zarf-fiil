@@ -871,6 +871,23 @@ h3{font-size:clamp(34px,5vw,50px)}
 .brg-l .ic{color:var(--blue);margin-top:2px;width:22px;height:22px}
 .brg-t .btn{margin-top:24px}
 @media (max-width:767px){.brg{grid-template-columns:minmax(0,1fr)}.brg-ph{max-width:320px;margin:0 auto;align-self:auto}}
+
+/* 3d */
+.art{max-width:400px;margin-bottom:34px}
+.hero-img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:51% 50%;border-radius:28px;box-shadow:var(--sh)}
+.art .phone{position:absolute;right:0;bottom:-34px;width:66%;border-width:6px;border-radius:28px;padding:8px 9px 14px}
+.art .chat{min-height:150px;gap:6px;padding:9px}
+.art .m{font-size:12.5px;padding:6px 9px}
+.art .ph-head{margin:5px 0 8px;font-size:13px}
+.sv .sv3d{display:block;width:128px;height:128px;object-fit:contain;margin-bottom:4px;transition:transform .35s}
+.sv:hover .sv3d{transform:translateY(-5px) rotate(-4deg)}
+.target3d{display:block;width:100%;max-width:330px;margin:0 auto}
+.gift3d{display:block;width:230px;margin:10px auto 18px}
+.glass3d{display:block;width:190px;margin:0 auto}
+.float{animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-10px)}}
+@media (min-width:1000px){.art{max-width:400px}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}}
 </style>
 </head>
 <body class="has-ad">
@@ -921,7 +938,7 @@ h3{font-size:clamp(34px,5vw,50px)}
       <a class="btn sand" href="#story">Склеить фразы</a>
     </div>
     <div class="art" aria-hidden="true">
-      <svg class="gem g1"><use href="#a-gem"/></svg><svg class="gem g2"><use href="#a-gem"/></svg>
+      <img class="hero-img" src="media/hero-3d.webp" alt="" width="1280" height="720" fetchpriority="high">
       <div class="phone"><div class="ph-top"><i></i></div><div class="ph-head">Fatma teyze</div><div class="chat" id="heroChat">
         <div class="m me bad-m" lang="tr">Ne zaman eve geldim?</div>
         <div class="m" lang="tr">Bilmiyorum, oğlum. Sen söyle.</div>
@@ -1151,12 +1168,12 @@ h3{font-size:clamp(34px,5vw,50px)}
   <h2 class="rv" style="margin-top:80px;text-align:center">Что внутри</h2>
   <p class="lead rv" style="text-align:center;margin-inline:auto">Давай посмотрим, что тебя ждет.</p>
   <div class="services">
-    <div class="sv hi rv"><span class="svi"><svg class="ic"><use href="#i-grammar"/></svg></span><span class="cnt" data-n="128">128</span><b>гайдов по грамматике</b><p>58 для A1-A2 и 70 для B1-C1. Разобраны как на канале.</p></div>
-    <div class="sv rv"><span class="svi"><svg class="ic"><use href="#i-chat"/></svg></span><span class="cnt" data-n="131">131</span><b>блок лексики по темам</b><p>Не список слов, а то, что реально говорят.</p></div>
-    <div class="sv rv"><span class="svi"><svg class="ic"><use href="#i-play"/></svg></span><span class="cnt" data-n="109">109</span><b>интерактивных ресурсов</b><p>Слова, тексты, диалоги, аудирование, игры на запоминание. 63 для A0-A2 и 46 для B1-C1.</p></div>
-    <div class="sv hi rv"><span class="svi"><svg class="ic"><use href="#i-cert"/></svg></span><span class="cnt" data-n="32">32</span><b>блока по экзаменам</b><p>A1, A2, B1, B2, C1, по каждому отдельно.</p></div>
-    <div class="sv rv"><span class="svi"><svg class="ic"><use href="#i-work"/></svg></span><span class="cnt" data-n="36">36</span><b>гайдов по работе</b><p>Для тех, кто ищет работу или уже работает.</p></div>
-    <div class="sv rv"><span class="svi"><svg class="ic"><use href="#i-film"/></svg></span><span class="cnt" data-n="1716">1716</span><b>материалов по уровням</b><p>Фильмы, книги, мультфильмы, подкасты, приложения, YouTube.</p></div>
+    <div class="sv hi rv"><img class="sv3d" src="media/zi-1.webp" alt="" width="160" height="160" loading="lazy"><span class="cnt" data-n="128">128</span><b>гайдов по грамматике</b><p>58 для A1-A2 и 70 для B1-C1. Разобраны как на канале.</p></div>
+    <div class="sv rv"><img class="sv3d" src="media/zi-2.webp" alt="" width="160" height="160" loading="lazy"><span class="cnt" data-n="131">131</span><b>блок лексики по темам</b><p>Не список слов, а то, что реально говорят.</p></div>
+    <div class="sv rv"><img class="sv3d" src="media/zi-3.webp" alt="" width="160" height="160" loading="lazy"><span class="cnt" data-n="109">109</span><b>интерактивных ресурсов</b><p>Слова, тексты, диалоги, аудирование, игры на запоминание. 63 для A0-A2 и 46 для B1-C1.</p></div>
+    <div class="sv hi rv"><img class="sv3d" src="media/zi-4.webp" alt="" width="160" height="160" loading="lazy"><span class="cnt" data-n="32">32</span><b>блока по экзаменам</b><p>A1, A2, B1, B2, C1, по каждому отдельно.</p></div>
+    <div class="sv rv"><img class="sv3d" src="media/zi-5.webp" alt="" width="160" height="160" loading="lazy"><span class="cnt" data-n="36">36</span><b>гайдов по работе</b><p>Для тех, кто ищет работу или уже работает.</p></div>
+    <div class="sv rv"><img class="sv3d" src="media/zi-6.webp" alt="" width="160" height="160" loading="lazy"><span class="cnt" data-n="1716">1716</span><b>материалов по уровням</b><p>Фильмы, книги, мультфильмы, подкасты, приложения, YouTube.</p></div>
   </div>
 
   <div class="panel gap rv" style="margin-top:40px;background:#fff">
@@ -1197,12 +1214,12 @@ h3{font-size:clamp(34px,5vw,50px)}
         <li class="rv"><i class="ck"></i><span>Тем, кто устал <b>звучать на пять лет</b></span></li>
       </ul>
     </div>
-    <svg class="target" viewBox="0 0 300 300" aria-hidden="true"><circle cx="150" cy="150" r="130" fill="#A9D3EE"/><circle cx="150" cy="150" r="98" fill="#fff"/><circle cx="150" cy="150" r="68" fill="#67B2E3"/><circle cx="150" cy="150" r="38" fill="#fff"/><circle cx="150" cy="150" r="16" fill="#2C78AE"/><path d="M150 150 268 32" stroke="#566A8B" stroke-width="8" stroke-linecap="round"/><path fill="#F6D79B" d="M262 38l8-34 26 26-34 8z"/></svg>
+    <img class="target3d float" src="media/zi-7.webp" alt="" width="260" height="260" loading="lazy">
   </div>
 
   <div class="future rv">
     <h2>А ведь может быть совсем по-другому</h2>
-    <svg class="gift" viewBox="0 0 240 200" aria-hidden="true"><path fill="#CFE5F5" d="M30 90h180v104H30z"/><path fill="#A9D3EE" d="M120 90h90v104h-90z"/><path fill="#2C78AE" d="M108 90h24v104h-24z"/><path fill="#DDF0FB" d="M18 62h204v30H18z"/><path fill="#2C78AE" d="M108 62h24v30h-24z"/><path fill="#F6D79B" d="M120 62C92 20 54 14 58 44c2 16 34 18 62 18zm0 0c28-42 66-48 62-18-2 16-34 18-62 18z"/></svg>
+    <img class="gift3d float" src="media/zi-8.webp" alt="" width="260" height="260" loading="lazy">
     <div class="fut-g">
       <p><i class="ck"></i><span>Соседка спрашивает, как прошел день. Ты отвечаешь <b>одной фразой</b>, и никто не звонит сыну.</span></p>
       <p><i class="ck"></i><span>Человек напротив перестает говорить <b>медленно и громко</b>.</span></p>
@@ -1229,7 +1246,7 @@ h3{font-size:clamp(34px,5vw,50px)}
   <p class="pull rv">"Понимать понимала, но говорить не говорила... <span>Сразу барьер прошел."</span></p>
 
   <div class="hour" id="buy">
-    <svg class="glass" viewBox="0 0 200 300" aria-hidden="true"><path fill="#fff" stroke="#A9D3EE" stroke-width="5" d="M40 16h120v40c0 40-44 62-44 94s44 54 44 94v40H40v-40c0-40 44-62 44-94S40 96 40 56z"/><path fill="#67B2E3" d="M58 76h84c-8 28-42 46-42 66 0-20-34-38-42-66z"/><path fill="#4C9BD1" d="M56 284c0-38 22-58 44-58s44 20 44 58z"/><g class="beads" fill="#2C78AE"><circle cx="100" cy="158" r="5"/><circle cx="100" cy="180" r="4"/><circle cx="100" cy="202" r="5"/></g><path fill="#F6D79B" d="M30 4h140v18H30zM30 278h140v18H30z"/></svg>
+    <img class="glass3d float" src="media/zi-9.webp" alt="" width="260" height="260" loading="lazy">
     <div class="h-c">
       <h2 class="rv" id="tmrH">Времени не так много. Не у цены, у тебя</h2>
       <div class="clock" id="clock">15:00</div>
@@ -1427,7 +1444,7 @@ function finish(){var s=$('#score');s.classList.add('on');$('#scoreN').textConte
 /* появление */
 if(G&&ST&&!RM){
  G.utils.toArray('.rv').forEach(function(e){if(e.classList.contains('hide'))return;G.to(e,{opacity:1,y:0,duration:.8,ease:'power3.out',scrollTrigger:{trigger:e,start:'top 92%',once:true}})});
- G.to('.g1',{y:-14,rotate:10,duration:3.4,yoyo:true,repeat:-1,ease:'sine.inOut'});G.to('.g2',{y:12,rotate:-14,duration:2.9,yoyo:true,repeat:-1,ease:'sine.inOut'});
+ 
  var hm=$$('#heroChat .m');G.set(hm,{opacity:0,y:12});G.timeline({repeat:-1,repeatDelay:2.4}).to(hm,{opacity:1,y:0,duration:.4,stagger:1.1}).to(hm,{opacity:0,duration:.3},'+=2');
 }else{$$('.rv').forEach(function(e){e.style.opacity=1;e.style.transform='none'})}
 
